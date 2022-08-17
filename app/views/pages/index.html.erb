@@ -1,17 +1,17 @@
-<div class="container">
+<div class="container text-center">
   <h1>Tipo de Cambio Dólar</h1>
-  <table class="table">
+  <table class="table text-center">
     <thead>
       <tr>
         <th>Fecha:</th>
-        <th>Valor:</th>
+        <th>Valor CLP/USD:</th>
       </tr>
     </thead>
     <tbody>
       <% @datos["serie"].each do |dato| %>
         <tr>
           <td><%= dato["fecha"] %></td>
-          <td><%= dato["valor"] %></td>
+          <td>$<%= dato["valor"] %></td>
         </tr>
       <% end %>
     </tbody>
